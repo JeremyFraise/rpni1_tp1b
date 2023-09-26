@@ -6,9 +6,11 @@
     <title>Déplacé Maison</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/catalogue.js"></script>
+    <script defer src="assets/js/donotscroll.js"></script>
 </head>
 <body>
     <!-- <button class="skipToContent">Passer aux contenus</button> -->
+
     <header class="entete" role="banner">
         <a class="entete__lien" href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -45,12 +47,14 @@
         </a>
         <a class="entete__panier" href="#">CART</a>
     </header>
+
+    <button class="entete__theme-switch">
+        <img class="entete__theme-switch--logo" src="assets/images/inkMode.png" alt="Changer le thème de la page">
+    </button>
+    
     <main role="main">
 
-        <!--À modifier/déplacer-->
-        <button class="entete__theme-switch">
-            <img class="entete__theme-switch--logo" src="assets/images/inkMode.png" alt="Changer le thème de la page">
-        </button>
+        
         
         
         <section class="sectionEntete">
@@ -84,57 +88,70 @@
                     <img class="explore__icone--cercle" src="assets/images/circle-fleche.svg" alt>
                 </div>
             </div>
-            
-
-
         </section>
 
-        <div class="donotscroll">- DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL - DEPLACE SHOP - DO NOT SCROLL </div> <!--À modifier-->
+        <!--Grandement adapté de https://codepen.io/marknotton/pen/NWqwqqj-->
+        <div class="horizontal-scrolling-banner">
+            <div class="scrolling-banner__text-container">
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+            </div>
+            <div class="scrolling-banner__text-container">
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+                <div class="sample-item">DEPLACE SHOP&nbsp;&nbsp;<span>·</span>&nbsp;&nbsp;DO NOT SCROLL&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+            </div>
+        </div> 
         
         <section class="sectionTitreSecondaire">
             <div class="champTexte">
-                <h2 class="titre-secondaire"><span class="titre-secondaire__info-sup souligner">WHO WE ARE</span>An independant <a href="#" class="lien">brand</a> of <br> urban trekking shoes and accessories<br> that comes from a convergence of arts and <br> personalities.</h2> 
+                <h2 class="titre-secondaire"><span class="titre-secondaire__info-sup souligner">WHO WE ARE</span>An independant <a href="#" class="lien">brand</a> of urban trekking shoes and accessories that comes from a convergence of arts and personalities.</h2> 
             </div>
             <section class="sectionCatalogue">
                 <div class="container-liste"> <!--slider-container-->
-                    <ul class="liste"> <!--inner-slider-->
-                        <li class="liste__item">
+                    <div class="liste"> <!--inner-slider-->
+                        <div class="liste__item">
                             <img class="liste__item--img" src="assets/images/shoes/image1.jpeg" alt>
                             <img class="liste__item--logo" src="assets/images/shoes/unisex.svg" alt="Unisex"> 
                             <h3 class="liste__item--produit">CACTUS</h3>
                             <p class="liste__item--prix">€ 300 EUR</p>
                             <p class="liste__item--rabais">€ 180 EUR</p>
-                        </li>            
-                        <li class="liste__item">
+                        </div>            
+                        <div class="liste__item">
                             <img class="liste__item--img" src="assets/images/shoes/image2.jpeg" alt>
                             <img class="liste__item--logo" src="assets/images/shoes/unisex.svg" alt="Unisex"> 
                             <h3 class="liste__item--produit">THE EYE</h3>
                             <p class="liste__item--prix">€ 240 EUR</p>
                             <p class="liste__item--rabais">€ 144 EUR</p>
-                        </li>   
-                        <li class="liste__item">
+                        </div>   
+                        <div class="liste__item">
                             <img class="liste__item--img" src="assets/images/shoes/image3.jpeg" alt>
                             <img class="liste__item--logo" src="assets/images/shoes/unisex.svg" alt="Unisex"> 
                             <h3 class="liste__item--produit">DURAN</h3>
                             <p class="liste__item--prix">€ 240 EUR</p>
                             <p class="liste__item--rabais">€ 144 EUR</p>
-                        </li>   
-                        <li class="liste__item">
+                        </div>   
+                        <div class="liste__item">
                             <img class="liste__item--img" src="assets/images/shoes/image4.jpeg" alt>
                             <img class="liste__item--logo" src="assets/images/shoes/unisex.svg" alt="Unisex"> 
                         
                             <h3 class="liste__item--produit">THE CODE</h3>
                             <p class="liste__item--prix">€ 240 EUR</p>
                             <p class="liste__item--rabais">€ 144 EUR</p>
-                        </li>   
-                        <li class="liste__item">
+                        </div>   
+                        <div class="liste__item">
                             <img class="liste__item--img" src="assets/images/shoes/image5.jpeg" alt>
                             <img class="liste__item--logo" src="assets/images/shoes/unisex.svg" alt="Unisex"> 
                             <h3 class="liste__item--produit">CARNERA</h3>
                             <p class="liste__item--prix">€ 240 EUR</p>
                             <p class="liste__item--rabais">€ 144 EUR</p>
-                        </li>   
-                    </ul>
+                        </div>   
+                    </div>
                 </div>
                 
             </section>
@@ -150,16 +167,92 @@
 
         <section class="sectionAvis">
 
-            <div>
+            <div class="conteneur-avis">
                 <!-- Background-image-->
-                <h4>William Gibson</h4>
-                <p>Good things come to those who wait - Déplacé Maison is what has been missing in modern fashion industry for yeats. Buy a shoe of high quality and design it finally happened.</p>
+                <div class="titre-avis">
+                    <h4 class="conteneur-avis__h4">William Gibson</h4>
+                    <img class="titre-avis__background-img" src="assets/images/virgolette.svg" alt>
+                </div>
+                <p class="conteneur-avis__p">Good things come to those who wait - Déplacé Maison is what has been missing in modern fashion industry for yeats. Buy a shoe of high quality and design it finally happened.</p>
+            </div>
+
+            <div class="conteneur-avis visuallyhidden">
+                <!-- Background-image-->
+                <h4 class="conteneur-avis__h4">Jamie K. Colten</h4>
+                <p class="conteneur-avis__p">Déplacé Maison is a convincer for anticipation. The urban trekking as nevers seen before. An exceptional product that has no equal alongside a great team represent the brand professionally.</p>
             </div>
 
         </section>
     </main>
-    <footer role="contentinfo">
-
+    <footer role="contentinfo" class="footer">
+        <div class="div1 formulaire">
+            <div class="form-intitule">
+                <h5 class="form-intitule__h5">SUBSCRIBE TO NEWSLETTER</h5>
+                <img class="form-intitule__img" src="assets/images/newsletter.svg" alt>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="email">SUBSCRIBE TO OUR NEWSLETTER<label>
+                        <input name="email" type="email">
+                    </div>
+                    <label for="submit">SUBMIT
+                        <input name="submit" type="submit">
+                    </label>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="div2 navigation-secondaire">
+            <nav class="nav">
+                <ul class="info listeLien">
+                    <h5 class="intitule">INFO</h5>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">FAQ</a>
+                    </li>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">RETURNS</a>
+                    </li>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="policy listeLien">
+                    <h5 class="intitule">POLICY</h5>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">TERMS</a>
+                    </li>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">PRIVACY</a>
+                    </li>
+                    <li class="listeLien__item">
+                        <a href="#" class="listeLien__lien">COOKIE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="div3 lienHaut">
+            <a href="#">
+                <div class="explore">
+                    <div class="explore__icone">
+                        <img class="explore__icone--fleche" src="assets/images/arrow-fleche.svg" alt>
+                        <img class="explore__icone--cercle" src="assets/images/circle-fleche.svg" alt>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="div4 credit">
+            <p>CRÉDIT</p>
+            <p>© 2020 DÉPLACÉ MAISON</p>
+        </div>
+        <div class="div5 reseaux-sociaux">
+            <a href="#" class="reseaux-sociaux__lien lien-facebook">
+                <img class="reseaux-sociaux__lien--img" src="assets/images/reseaux-sociaux/facebook-f.svg" alt>
+            </a>
+            <a href="#" class="reseaux-sociaux__lien lien-instagram">
+                <img class="reseaux-sociaux__lien--img" src="assets/images/reseaux-sociaux/instagram.svg" alt>
+            </a>
+        </div>
     </footer>
 </body>
 </html>

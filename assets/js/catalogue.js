@@ -4,11 +4,7 @@
  * @version 1
  */
 
-
-
 // Code grandement inspiré de https://stackabuse.com/how-to-create-a-draggable-carousel-using-vanilla-javascript/
-
-
 
 const refDiv = document.querySelector(".container-liste");
 const refListe = document.querySelector(".liste");
